@@ -29,7 +29,7 @@ let months = [
   "DEC",
 ];
 
-function setClock() {}
+function setClock() { }
 
 setInterval(() => {
   let date = new Date();
@@ -41,20 +41,19 @@ setInterval(() => {
 
   let viewSecond = second * 6;
   let viewMinutes = minutes * 6;
-  let viewHour = date.getHours() * 15;
-  console.log(viewHour);
+  let viewHour = date.getHours() * 30;
+  console.log(date.getHours());
 
   let nowManth = date.getMonth();
   let nowWeek = date.getDay();
   let nowDay = date.getDate();
 
-  digClock.innerHTML = `${hour < 10 ? `0${hour}` : hour}: ${
-    minutes < 10 ? `0${minutes}` : minutes
-  }`;
+  digClock.innerHTML = `${hour < 10 ? `0${hour}` : hour}: ${minutes < 10 ? `0${minutes}` : minutes
+    }`;
 
   dayInWeek.innerHTML = `${day[nowWeek]}, ${months[nowManth]} <span>${nowDay}</span>`;
 
   analogSecund.style.transform = `rotate(${viewSecond}deg)`;
   analogMinute.style.transform = `rotate(${viewMinutes}deg)`;
-  analogHour.style.transform = `rotate(${viewHour}deg)`;
+  analogHour.style.transform = `rotate(${viewHour > 360 ? viewHour - 360 : viewHour}deg)`;
 }, 1000);
