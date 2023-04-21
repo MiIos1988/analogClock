@@ -5,26 +5,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   // background-image:  url(../img/bg-light.jpg);
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
+      rgba(255, 255, 255, 0.5)),
     url(../img/bg-light.jpg);
   background-size: cover;
   height: 100vh;
 }
+
 .container {
   width: 38rem;
   margin: 100px auto 20px;
-  box-shadow: 0 0 8px black;
+  box-shadow: 0 0 25px black;
   display: flex;
   flex-direction: column;
 
@@ -55,35 +56,31 @@ body {
       height: 50px;
       // transform: translateY(0);
     }
+
     .minutLine {
       top: 20px;
       background-color: black;
       height: 70px;
       // transform: translateY(-0%);
     }
+
     .secondLine {
       top: 20px;
       background-color: red;
       height: 70px;
       // transform: trans lateY(-0%);
     }
-
-    // .pointInCenter {
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   background-color: red;
-    //   width: 4px;
-    //   height: 4px;
-    // }
   }
 }
+
 .digitalClock {
   font-size: 4rem;
   // font-weight: 700;
 }
+
 .date {
   text-transform: uppercase;
+
   span {
     display: inline-block;
     background-color: black;
@@ -94,12 +91,9 @@ body {
   }
 }
 
-.btn {
-  display: block;
-  width: 350px;
-  margin: 0 auto;
-  padding: 15px;
-  border-radius: 4px;
-  background-color: black;
-  color: white;
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 3rem;
+  font-weight: 500;
 }
