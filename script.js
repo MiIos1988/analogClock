@@ -5,13 +5,13 @@ let analogMinute = document.querySelector(".minutLine");
 let analogSecund = document.querySelector(".secondLine");
 
 let day = [
-  "NEDELJA",
-  "PONEDELJAK",
-  "UTORAK",
-  "SREDA",
-  "CETVRTAK",
-  "PETAK",
-  "SUBOTA",
+  "SUNDAY",
+  "MONDAY",
+  "TUESDAY",
+  "WEDNESDAY",
+  "THURSDAY",
+  "FRIDAY",
+  "SATURDAY",
 ];
 
 let months = [
@@ -19,12 +19,12 @@ let months = [
   "FEB",
   "MART",
   "APR",
-  "MAJ",
+  "MAY",
   "JUN",
   "JUL",
-  "AVG",
+  "AUG",
   "SEP",
-  "OKT",
+  "OCT",
   "NOV",
   "DEC",
 ];
