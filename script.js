@@ -33,9 +33,7 @@ function setClock() { }
 
 setInterval(() => {
   let date = new Date();
-
   let hour = date.getHours();
-  let hourAn = date.getHours() % 12;
   let minutes = date.getMinutes();
   let second = date.getSeconds();
 
@@ -44,14 +42,14 @@ setInterval(() => {
   let viewHour = date.getHours() * 30;
   console.log(date.getHours());
 
-  let nowManth = date.getMonth();
+  let nowMonth = date.getMonth();
   let nowWeek = date.getDay();
   let nowDay = date.getDate();
 
   digClock.innerHTML = `${hour < 10 ? `0${hour}` : hour}: ${minutes < 10 ? `0${minutes}` : minutes
     }`;
 
-  dayInWeek.innerHTML = `${day[nowWeek]}, ${months[nowManth]} <span>${nowDay}</span>`;
+  dayInWeek.innerHTML = `${day[nowWeek]}, ${months[nowMonth]} <span>${nowDay}</span>`;
 
   analogSecund.style.transform = `rotate(${viewSecond}deg)`;
   analogMinute.style.transform = `rotate(${viewMinutes}deg)`;
