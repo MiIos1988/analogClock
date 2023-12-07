@@ -1,7 +1,7 @@
 let digClock = document.querySelector(".digitalClock");
 let dayInWeek = document.querySelector(".date");
 let analogHour = document.querySelector(".hourLine");
-let analogMinute = document.querySelector(".minutLine");
+let analogMinute = document.querySelector(".minuteLine");
 let analogSecund = document.querySelector(".secondLine");
 
 let day = [
