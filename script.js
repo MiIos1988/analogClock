@@ -32,19 +32,19 @@ let months = [
 function setClock() { }
 
 setInterval(() => {
-  let date = new Date();
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let second = date.getSeconds();
+  const date = new Date();
+  const hour = date.getHours();
+  const minutes = date.getMinutes();
+  const second = date.getSeconds();
 
-  let viewSecond = second * 6;
-  let viewMinutes = minutes * 6;
-  let viewHour = date.getHours() * 30;
+  const viewSecond = second * 6;
+  const viewMinutes = minutes * 6;
+  const viewHour = date.getHours() * 30;
   console.log(date.getHours());
 
-  let nowMonth = date.getMonth();
-  let nowWeek = date.getDay();
-  let nowDay = date.getDate();
+  const nowMonth = date.getMonth();
+  const nowWeek = date.getDay();
+  const nowDay = date.getDate();
 
   digClock.innerHTML = `${hour < 10 ? `0${hour}` : hour}: ${minutes < 10 ? `0${minutes}` : minutes
     }`;
