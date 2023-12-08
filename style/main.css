@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/bg-light.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/img/bg-light.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -26,6 +27,7 @@ body {
   text-align: center;
   padding: 50px;
 }
+
 .container .analogClock {
   margin: 0 auto;
   border: 2px solid black;
@@ -35,22 +37,26 @@ body {
   margin-bottom: 40px;
   position: relative;
 }
+
 .container .analogClock .allLine {
   width: 3px;
   position: absolute;
   left: 50%;
   transform-origin: bottom;
 }
+
 .container .analogClock .hourLine {
   top: 40px;
   background-color: black;
   height: 50px;
 }
-.container .analogClock .minutLine {
+
+.container .analogClock .minuteLine {
   top: 20px;
   background-color: black;
   height: 70px;
 }
+
 .container .analogClock .secondLine {
   top: 20px;
   background-color: red;
@@ -64,6 +70,7 @@ body {
 .date {
   text-transform: uppercase;
 }
+
 .date span {
   display: inline-block;
   background-color: black;
@@ -78,4 +85,6 @@ h1 {
   font-size: 6rem;
   margin-top: 3rem;
   font-weight: 500;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

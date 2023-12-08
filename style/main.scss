@@ -17,7 +17,7 @@ body {
   background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)),
-    url(../img/bg-light.jpg);
+    url(../assets/img/bg-light.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -57,7 +57,7 @@ body {
       // transform: translateY(0);
     }
 
-    .minutLine {
+    .minuteLine {
       top: 20px;
       background-color: black;
       height: 70px;
