@@ -27,9 +27,7 @@ body {
   box-shadow: 0 0 25px black;
   display: flex;
   flex-direction: column;
-
   text-align: center;
-
   padding: 50px;
 
   .analogClock {
@@ -44,7 +42,6 @@ body {
     .allLine {
       width: 3px;
       position: absolute;
-
       left: 50%;
       transform-origin: bottom;
     }
