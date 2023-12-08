@@ -42,18 +42,15 @@ setInterval(() => {
   const viewSecond = second * 6;
   const viewMinutes = minutes * 6;
   const viewHour = date.getHours() * 30;
-  console.log(date.getHours());
 
   const nowMonth = date.getMonth();
   const nowWeek = date.getDay();
   const nowDay = date.getDate();
 
-  digClock === null ? null : digClock.innerHTML = `${hour < 10 ? `0${hour}` : hour}: ${minutes < 10 ? `0${minutes}` : minutes
-    }`;
+  digClock !== null ? digClock.innerHTML = `${hour < 10 ? `0${hour}` : hour}: ${minutes < 10 ? `0${minutes}` : minutes}` : null;
+  dayInWeek !== null ? dayInWeek.innerHTML = `${day[nowWeek]}, ${months[nowMonth]} <span>${nowDay}</span>` : null;
 
-  dayInWeek === null ? null : dayInWeek.innerHTML = `${day[nowWeek]}, ${months[nowMonth]} <span>${nowDay}</span>`;
-
-  analogSecund === null ? null : analogSecund.style.transform = `rotate(${viewSecond}deg)`;
-  analogMinute === null ? null : analogMinute.style.transform = `rotate(${viewMinutes}deg)`;
-  analogHour === null ? null : analogHour.style.transform = `rotate(${viewHour > 360 ? viewHour - 360 : viewHour}deg)`;
+  analogSecund !== null ? analogSecund.style.transform = `rotate(${viewSecond}deg)` : null;
+  analogMinute !== null ? analogMinute.style.transform = `rotate(${viewMinutes}deg)` : null;
+  analogHour !== null ? analogHour.style.transform = `rotate(${viewHour > 360 ? viewHour - 360 : viewHour}deg)` : null;
 }, 1000);
